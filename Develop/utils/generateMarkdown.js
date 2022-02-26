@@ -13,7 +13,7 @@ const generateMarkdown = data => {
   ## ${data.link}
 
   # Built With:
-  ## ${data.languages.join(', ')}
+  ## ${data.languages}
 
   # Table Of Contents
   * [Installation](#instalation)
