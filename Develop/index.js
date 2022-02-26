@@ -34,11 +34,34 @@ const questions = () => {
            }  
         },
         {
+            typ: 'input',
+            name: 'repo',
+            message: 'What is the name of your Repository? (Required)',
+            validate: repoInput => {
+                if (repoInput) {
+                    return true;
+                } else {
+                    console.log('Please enter the name of your repository')
+                    return false;
+                }
+            } 
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.'
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Provide instructions and exmples for use. Include screenshots as needed.'
+        },
+        {
             type: 'list',
             name: 'license',
             message: 'What license supports your project?',
             choices: ['MIT','ISC','GPL','APACHE','None']
-
+            
         },
         {
             type: 'link',
