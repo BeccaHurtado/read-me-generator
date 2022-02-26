@@ -10,8 +10,9 @@ const generateMarkdown = data => {
   ## Description
 
   ### ${data.description}
+  ### ${data.languages.join(', ')}
+  ### ${data.link}
 
-  
   ## Table Of Contents
   * [Installation](#instalation)
   * [Usage](#usage)
@@ -25,7 +26,7 @@ const generateMarkdown = data => {
   
   ## Usage
   ### ${data.usage}
-  ![screenshot](/assets/screenshot.png)
+  ![screenshot](./assets/screenshot.png)
 
   ## License
   ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
@@ -35,6 +36,7 @@ const generateMarkdown = data => {
   [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
   ## Tests
+  ${data.test}
 
   ## Questions
   ### If you have any questions or issues with the generator, visit https://github.com/${data.github}/read-me-generator to create a new issue. You can also contact me at ${data.email} for any additional questions.

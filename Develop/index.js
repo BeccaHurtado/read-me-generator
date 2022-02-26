@@ -40,7 +40,7 @@ const questions = () => {
             choices: ['Python', 'Java', 'JavaScript', 'Html', 'CSS', 'C++', 'None of the above']
         },
         {
-            typ: 'input',
+            typ: 'link',
             name: 'link',
             message: 'What is link to your page?',
             validate: linkInput => {
@@ -68,6 +68,11 @@ const questions = () => {
             message: 'What license supports your project?',
             choices: ['MIT','ISC','GPL','APACHE','None']
             
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: 'Enter tests for your application'
         },
         {
             typ: 'input',
