@@ -31,13 +31,13 @@ const generateMarkdown = data => {
   ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
 
   ## Contributing
-  ### If you would like to contribute, read over the contributor covenant located below. Send further questions to ${data.email}.
+  ### If you would like to contribute, read over the contributor covenant located below. Send further questions to ${data.email} regarding contribution.
   [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
   ## Tests
 
   ## Questions
-  ### If you have any questions about the generator, visit https://github.com/${data.github}/read-me-generator to create a new issue. You can also contact me at ${data.email} for any additional questions.
+  ### If you have any questions or issues with the generator, visit https://github.com/${data.github}/read-me-generator to create a new issue. You can also contact me at ${data.email} for any additional questions.
   `
 }
 
