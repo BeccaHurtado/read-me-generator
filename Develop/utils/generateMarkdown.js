@@ -7,13 +7,15 @@ const generateMarkdown = data => {
   ![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&style=flat-square&up_message=online&url=https%3A%2F%2F${data.github}.github.io%2F${data.repo})
   ![GitHub contributors](https://img.shields.io/github/contributors/${data.github}/${data.repo}?style=flat-square)
 
-  ## Description
+  # Description
 
-  ### ${data.description}
-  ### ${data.languages.join(', ')}
-  ### ${data.link}
+  ## ${data.description}
+  ## ${data.link}
 
-  ## Table Of Contents
+  # Built With:
+  ## ${data.languages.join(', ')}
+
+  # Table Of Contents
   * [Installation](#instalation)
   * [Usage](#usage)
   * [License](#license)
@@ -21,25 +23,25 @@ const generateMarkdown = data => {
   * [Test](#test)
   * [Questions](#questions)
   
-  ## Installation
-  ### ${data.installation}
+  # Installation
+  ## ${data.installation}
   
-  ## Usage
-  ### ${data.usage}
-  ![screenshot](./assets/screenshot.png)
+  # Usage
+  ## ${data.usage}
+  ![Screenshot](./assets/screenshot.png)
 
-  ## License
+  # License
   ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
 
-  ## Contributing
-  ### If you would like to contribute, read over the contributor covenant located below. Send further questions to ${data.email} regarding contribution.
+  # Contributing
+  ## If you would like to contribute, read over the contributor covenant located below. Send further questions to ${data.email} regarding contribution.
   [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
-  ## Tests
+  # Tests
   ${data.test}
 
-  ## Questions
-  ### If you have any questions or issues with the generator, visit https://github.com/${data.github}/read-me-generator to create a new issue. You can also contact me at ${data.email} for any additional questions.
+  # Questions
+  ## If you have any questions or issues with the generator, visit https://github.com/${data.github}/read-me-generator to create a new issue. You can also contact me at ${data.email} for any additional questions.
   `
 }
 
