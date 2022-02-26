@@ -34,17 +34,23 @@ const questions = () => {
            }  
         },
         {
+            type: 'checkbox',
+            name: 'languages',
+            message: 'What languages were used in your project?',
+            choices: ['Python', 'Java', 'JavaScript', 'Html', 'CSS', 'C++', 'None of the above']
+        },
+        {
             typ: 'input',
-            name: 'repo',
-            message: 'What is the name of your Repository? (Required)',
-            validate: repoInput => {
-                if (repoInput) {
+            name: 'link',
+            message: 'What is link to your page?',
+            validate: linkInput => {
+                if (linkInput) {
                     return true;
                 } else {
-                    console.log('Please enter the name of your repository')
+                    console.log('Please enter the link to your webpage')
                     return false;
                 }
-            } 
+            }
         },
         {
             type: 'input',
@@ -62,6 +68,19 @@ const questions = () => {
             message: 'What license supports your project?',
             choices: ['MIT','ISC','GPL','APACHE','None']
             
+        },
+        {
+            typ: 'input',
+            name: 'repo',
+            message: 'What is the name of your Repository? (Required)',
+            validate: repoInput => {
+                if (repoInput) {
+                    return true;
+                } else {
+                    console.log('Please enter the name of your repository')
+                    return false;
+                }
+            } 
         },
         {
             type: 'link',
