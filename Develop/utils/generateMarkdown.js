@@ -41,7 +41,7 @@ const generateMarkdown = data => {
   ${data.test}
 
   # Questions
-  ## If you have any questions or issues with the generator, visit https://github.com/${data.github}/read-me-generator to create a new issue. You can also contact me at ${data.email} for any additional questions.
+  ## If you have any questions or issues with the generator, visit https://github.com/${data.github}/${data.repo} to create a new issue. You can also contact me at ${data.email} for any additional questions.
   `
 }
 
