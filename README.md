@@ -24,7 +24,7 @@
   
   # Usage
   ## Answer the questions prompted and by the end you chould receive a line that reads 'Readme.md created!'. The user can then find the file created within the develop folder. A screenshot of the project can also be included with the name of 'screenshot.png' in the assets folder.
-  ![Screenshot](./assets/screenshot.png)
+  ![Screenshot](./Develop/assets/screenshot.png)
 
   # License
   ![GitHub license](https://img.shields.io/badge/license-ISC-blue.svg)
